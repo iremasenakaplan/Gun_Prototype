@@ -7,7 +7,7 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-    //[SerializeField] GunListScriptable gunList;
+    [SerializeField] GunListScriptable gunList;
 
     int currentLevelIndex = 0;
 
@@ -24,19 +24,34 @@ public class MenuManager : MonoBehaviour
         LeftButton();
     }
 
-    void PlayButton()
+    public void PlayButton()
     {
         SceneManager.LoadScene(currentLevelIndex + 1);
     }
 
-    void RightButton()
+    public void LeftButton()
     {
-
+       if(currentLevelIndex > 0)
+        {
+           currentLevelIndex--;
+           gunNameTitle.text = gunList.guns[currentLevelIndex].gunName;
+           if(menuGunParent.childCount > 0)
+              Destroy(menuGunParent.GetChild(0).gameObject);
+            Instantiate(gunList.guns[currentLevelIndex].menuGan, menuGunParent);
+        }
     }
 
-    void LeftButton()
+    public void RightButton()
     {
-
+        if(currentLevelIndex < gunList.guns.Length-1)
+        {
+            currentLevelIndex++;
+            gunNameTitle.text = gunList.guns[currentLevelIndex].gunName;
+            if (menuGunParent.childCount > 0)
+                Destroy(menuGunParent.GetChild(0).gameObject);
+            Instantiate(gunList.guns[currentLevelIndex].menuGan, menuGunParent);
+        }
     }
-  
+
+    
 }

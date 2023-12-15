@@ -3,7 +3,13 @@ guid: a0d2c99df45575a4b87148789a08d552
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gunList: {fileID: 11400000, guid: 8a23da4fbf9d768408ee758887e5c535, type: 2}
+  - menuGunParent: {instanceID: 0}
+  - gunNameTitle: {instanceID: 0}
+  - playButton: {instanceID: 0}
+  - rightButton: {instanceID: 0}
+  - leftButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

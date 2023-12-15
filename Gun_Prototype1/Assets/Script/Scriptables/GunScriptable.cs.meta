@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: af5d71413ba027e4ca356819122be889
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - originFlag: {instanceID: 0}
+  - menuGan: {fileID: 8410198237284715796, guid: d22af490b79cacf49b7daa7657d62c10, type: 3}
+  - gameGun: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
