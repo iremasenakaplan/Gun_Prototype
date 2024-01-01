@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Button playButton;
     [SerializeField] Button rightButton;
     [SerializeField] Button leftButton;
-    
+    //Degisiklik
     void Start()
     {
         RightButton();
